@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            pbCowpokeCaterpie = new PictureBox();
             pbFlashDrive = new PictureBox();
             pbGamerFuel = new PictureBox();
             pbPeach = new PictureBox();
@@ -39,7 +38,6 @@
             btnVendOver = new Button();
             btnCard = new Button();
             pbLogo = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pbCowpokeCaterpie).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbFlashDrive).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbGamerFuel).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbPeach).BeginInit();
@@ -47,16 +45,6 @@
             ((System.ComponentModel.ISupportInitialize)pbZergling).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbLogo).BeginInit();
             SuspendLayout();
-            // 
-            // pbCowpokeCaterpie
-            // 
-            pbCowpokeCaterpie.Image = (Image)resources.GetObject("pbCowpokeCaterpie.Image");
-            pbCowpokeCaterpie.Location = new Point(408, 209);
-            pbCowpokeCaterpie.Name = "pbCowpokeCaterpie";
-            pbCowpokeCaterpie.Size = new Size(100, 54);
-            pbCowpokeCaterpie.TabIndex = 0;
-            pbCowpokeCaterpie.TabStop = false;
-            pbCowpokeCaterpie.Click += pictureBox1_Click;
             // 
             // pbFlashDrive
             // 
@@ -151,7 +139,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(846, 688);
             Controls.Add(pbLogo);
             Controls.Add(btnCard);
             Controls.Add(btnVendOver);
@@ -161,10 +149,8 @@
             Controls.Add(pbPeach);
             Controls.Add(pbGamerFuel);
             Controls.Add(pbFlashDrive);
-            Controls.Add(pbCowpokeCaterpie);
             Name = "Form1";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)pbCowpokeCaterpie).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbFlashDrive).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbGamerFuel).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbPeach).EndInit();
@@ -177,7 +163,6 @@
 
         #endregion
 
-        private PictureBox pbCowpokeCaterpie;
         private PictureBox pbFlashDrive;
         private PictureBox pbGamerFuel;
         private PictureBox pbPeach;
