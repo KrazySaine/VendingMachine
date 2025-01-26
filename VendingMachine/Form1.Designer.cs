@@ -38,18 +38,20 @@
             btnVendOver = new Button();
             btnCard = new Button();
             pbLogo = new PictureBox();
+            pbFungiFriends = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pbFlashDrive).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbGamerFuel).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbPeach).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbRedPony).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbZergling).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbLogo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbFungiFriends).BeginInit();
             SuspendLayout();
             // 
             // pbFlashDrive
             // 
             pbFlashDrive.Image = (Image)resources.GetObject("pbFlashDrive.Image");
-            pbFlashDrive.Location = new Point(263, 85);
+            pbFlashDrive.Location = new Point(263, 216);
             pbFlashDrive.Name = "pbFlashDrive";
             pbFlashDrive.Size = new Size(100, 63);
             pbFlashDrive.TabIndex = 1;
@@ -59,7 +61,7 @@
             // pbGamerFuel
             // 
             pbGamerFuel.Image = (Image)resources.GetObject("pbGamerFuel.Image");
-            pbGamerFuel.Location = new Point(408, 85);
+            pbGamerFuel.Location = new Point(397, 179);
             pbGamerFuel.Name = "pbGamerFuel";
             pbGamerFuel.Size = new Size(100, 100);
             pbGamerFuel.TabIndex = 2;
@@ -69,7 +71,7 @@
             // pbPeach
             // 
             pbPeach.Image = (Image)resources.GetObject("pbPeach.Image");
-            pbPeach.Location = new Point(117, 209);
+            pbPeach.Location = new Point(117, 308);
             pbPeach.Name = "pbPeach";
             pbPeach.Size = new Size(100, 54);
             pbPeach.TabIndex = 3;
@@ -79,7 +81,7 @@
             // pbRedPony
             // 
             pbRedPony.Image = (Image)resources.GetObject("pbRedPony.Image");
-            pbRedPony.Location = new Point(263, 209);
+            pbRedPony.Location = new Point(263, 308);
             pbRedPony.Name = "pbRedPony";
             pbRedPony.Size = new Size(100, 54);
             pbRedPony.TabIndex = 4;
@@ -89,7 +91,7 @@
             // pbZergling
             // 
             pbZergling.Image = (Image)resources.GetObject("pbZergling.Image");
-            pbZergling.Location = new Point(117, 85);
+            pbZergling.Location = new Point(117, 179);
             pbZergling.Name = "pbZergling";
             pbZergling.Size = new Size(100, 100);
             pbZergling.TabIndex = 5;
@@ -128,18 +130,29 @@
             // pbLogo
             // 
             pbLogo.Image = (Image)resources.GetObject("pbLogo.Image");
-            pbLogo.Location = new Point(208, 269);
+            pbLogo.Location = new Point(201, 452);
             pbLogo.Name = "pbLogo";
             pbLogo.Size = new Size(202, 179);
             pbLogo.TabIndex = 9;
             pbLogo.TabStop = false;
             pbLogo.Click += pbLogo_Click;
             // 
+            // pbFungiFriends
+            // 
+            pbFungiFriends.Image = (Image)resources.GetObject("pbFungiFriends.Image");
+            pbFungiFriends.Location = new Point(550, 337);
+            pbFungiFriends.Name = "pbFungiFriends";
+            pbFungiFriends.Size = new Size(230, 294);
+            pbFungiFriends.TabIndex = 10;
+            pbFungiFriends.TabStop = false;
+            pbFungiFriends.Click += pbFungiFriends_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(846, 688);
+            Controls.Add(pbFungiFriends);
             Controls.Add(pbLogo);
             Controls.Add(btnCard);
             Controls.Add(btnVendOver);
@@ -157,6 +170,7 @@
             ((System.ComponentModel.ISupportInitialize)pbRedPony).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbZergling).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbLogo).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbFungiFriends).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -172,5 +186,6 @@
         private Button btnVendOver;
         private Button btnCard;
         private PictureBox pbLogo;
+        private PictureBox pbFungiFriends;
     }
 }

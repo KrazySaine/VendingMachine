@@ -83,7 +83,34 @@ namespace VendingMachine
             }
         }
 
- 
+        private void pbFungiFriends_Click(object sender, EventArgs e)
+        {
+            if (myBool == true)
+            {
+                // Display a pop-up message with the website link
+                DialogResult result = MessageBox.Show(
+                    "You want a Fungi Friend?! Visit our website:\nhttps://www.viberantzdesigns.com\n\nWould you like to open it now?",
+                    "Fungi Friend Website",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Information
+                );
+
+                // Open the website if the user clicks 'Yes'
+                if (result == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                    {
+                        FileName = "https://www.viberantzdesigns.com",
+                        UseShellExecute = true
+                    });
+                }
+            }
+            else
+            {
+                txtDisplay.Text = "Please insert card.";
+            }
+        }
+
         private void btnCard_Click(object sender, EventArgs e)
         {
             myBool = true;
