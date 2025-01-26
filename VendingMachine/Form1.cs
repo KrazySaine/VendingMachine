@@ -5,7 +5,7 @@ namespace VendingMachine
 {
     public partial class Form1 : Form
     {
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -73,7 +73,7 @@ namespace VendingMachine
 
         private void pbLogo_Click(object sender, EventArgs e)
         {
-            if (myBool == true) 
+            if (myBool == true)
             {
                 txtDisplay.Text = "I'm not for sale!  Make another selection!";
             }
@@ -83,7 +83,92 @@ namespace VendingMachine
             }
         }
 
- 
+        private void pbFungiFriends_Click(object sender, EventArgs e)
+        {
+            if (myBool == true)
+            {
+                // Couple Mushroom Art
+                DisplayPopup(
+                    "The Couple Mushrooms",
+                    "Celebrate love and connection with this enchanting couple mushroom print. Perfect for those who believe in soulmates and fungi that grow together!\n\nPrint Now at www.viberantzdesigns.com!"
+                );
+            }
+            else
+            {
+                txtDisplay.Text = "Please insert card.";
+            }
+        }
+
+        private void pbTravelingGuitarist_Click(object sender, EventArgs e)
+        {
+            if (myBool == true)
+            {
+                // Traveling Guitarist Mushroom Art
+                DisplayPopup(
+                    "The Traveling Guitarist Mushroom",
+                    "Hit the road with the coolest mushroom in town! Whether it’s blues, rock, or a hint of jazz, this mushroom is strumming for your soul.\n\nPrint Now at www.viberantzdesigns.com!"
+                );
+            }
+            else
+            {
+                txtDisplay.Text = "Please insert card.";
+            }
+        }
+
+        private void pbNurse_Click(object sender, EventArgs e)
+        {
+            if (myBool == true)
+            {
+                // Nurse Mushroom Art
+                DisplayPopup(
+                    "The Caring Nurse Mushroom",
+                    "For the healers, the nurturers, and the ones who make the world better one bandage at a time! This nurse mushroom is for you!\n\nPrint Now at www.viberantzdesigns.com!"
+                );
+            }
+            else
+            {
+                txtDisplay.Text = "Please insert card.";
+            }
+        }
+
+        private void pbMotorcycle_Click(object sender, EventArgs e)
+        {
+            if (myBool == true)
+            {
+                // Motorcycle Mushroom Art
+                DisplayPopup(
+                    "The Motorcycle Mushroom",
+                    "Rev up your vibe with this bad-to-the-bone biker mushroom. Unique art for the wild souls who ride free and live boldly!\n\nPrint Now at www.viberantzdesigns.com!"
+                );
+            }
+            else
+            {
+                txtDisplay.Text = "Please insert card.";
+            }
+        }
+
+        // Helper method for displaying pop-ups
+        private void DisplayPopup(string title, string message)
+        {
+            DialogResult result = MessageBox.Show(
+                $"{message}\n\nWould you like to visit the website now?",
+                $"Unique Art for Unique Souls: {title}",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Information
+            );
+
+            // Open the website if the user clicks 'Yes'
+            if (result == DialogResult.Yes)
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = "https://www.viberantzdesigns.com",
+                    UseShellExecute = true
+                });
+            }
+        }
+
+
         private void btnCard_Click(object sender, EventArgs e)
         {
             myBool = true;
@@ -93,7 +178,7 @@ namespace VendingMachine
 
         private void txtDisplay_TextChanged(object sender, EventArgs e)
         {
-            
+
             //output message at beginning "welcome" and output messages when each picture
             // is clicked
         }
